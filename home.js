@@ -3,7 +3,6 @@ const issueCount = document.getElementById("issueCount");
 
 const API = "https://phi-lab-server.vercel.app/api/v1/lab/issues";
 
-// lode parpes
 async function loadIssues() {
   const res = await fetch(API);
   const data = await res.json();
